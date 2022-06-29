@@ -1,15 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, View, Image, SafeAreaView } from 'react-native';
 
 export default function App() {
-  const handlePress = () => console.log("Text pressed");
-
   return (
     <SafeAreaView style={styles.container}>
-      <Text numberOfLines={1} onPress={handlePress}>
-        Hello React Native! - A really really long text. Now even longer and see what happens!
-      </Text>
-      <StatusBar style="auto" />
+      <Text>Hello React Native</Text>
+      <Image source={require('./assets/icon.png')}/>
     </SafeAreaView>
   );
 }
@@ -19,5 +15,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     justifyContent: 'center',
+    alignItems: 'center',
   },
 });
