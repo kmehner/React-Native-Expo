@@ -8,15 +8,14 @@ import { StyleSheet,
 import { useDimensions, useDeviceOrientation } from '@react-native-community/hooks';
 
 export default function App() {
-  console.log(useDimensions())
-  console.log(useDeviceOrientation())
+  const { landscape } = useDeviceOrientation();
 
   return (
     <SafeAreaView style={styles.container}>
       <View style={{
         backgroundColor: 'dodgerblue',
         width: '100%',
-        height: '30%',
+        height: landscape ? "100%" : "30%",
       }}></View>
     </SafeAreaView>
   );
