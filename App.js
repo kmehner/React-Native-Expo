@@ -9,7 +9,8 @@ export default function App() {
         flex: 1,
         flexDirection: "row", // horizontal 
         justifyContent: "center", // main 
-        alignItems: "center", // very center
+        alignContent: "center", // very center
+        flexWrap: "wrap", // when enabled, alignItems determins the alignment within each line 
       }}
     >
       <View style={{
@@ -24,6 +25,16 @@ export default function App() {
       }} />
       <View style={{
         backgroundColor: "tomato",
+        width: 100,
+        height: 100,
+      }} />
+      <View style={{
+        backgroundColor: "grey",
+        width: 100,
+        height: 100,
+      }} />
+      <View style={{
+        backgroundColor: "greenyellow",
         width: 100,
         height: 100,
       }} />
