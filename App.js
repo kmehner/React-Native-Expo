@@ -6,8 +6,10 @@ export default function App() {
     <View 
       style={{
         backgroundColor: "#fff",
-        width: 100,
-        height: 100, 
+        flex: 1,
+        flexDirection: "row", // horizontal 
+        justifyContent: "center", // main 
+        alignItems: "center", // very center
       }}
     >
       <View style={{
