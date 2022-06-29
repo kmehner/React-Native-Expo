@@ -1,17 +1,26 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TouchableWithoutFeedback, View, Image, SafeAreaView, Touchable } from 'react-native';
+import { 
+  StyleSheet, 
+  Text, 
+  TouchableWithoutFeedback, 
+  TouchableOpacity,
+  View, 
+  Image, 
+  SafeAreaView, 
+  Touchable, 
+} from 'react-native';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <Text>Hello React Native</Text>
-      <TouchableWithoutFeedback onPress={() => console.log("Image tapped")} > 
+      <TouchableOpacity onPress={() => console.log("Image tapped")} > 
         <Image 
           source={{ 
             width: 200,
             height: 300,
             uri: "https://picsum.photos/200/300" }}/>
-      </TouchableWithoutFeedback>
+      </TouchableOpacity>
     </SafeAreaView>
   );
 }
