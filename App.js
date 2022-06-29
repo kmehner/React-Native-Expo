@@ -6,20 +6,24 @@ export default function App() {
     <View 
       style={{
         backgroundColor: "#fff",
-        flex: 1, 
+        width: 100,
+        height: 100, 
       }}
     >
       <View style={{
         backgroundColor: "dodgerblue",
-        flex: 1,
+        width: 100,
+        height: 100,
       }} />
       <View style={{
         backgroundColor: "gold",
-        flex: 1,
+        width: 100,
+        height: 100,
       }} />
       <View style={{
         backgroundColor: "tomato",
-        flex: 1,
+        width: 100,
+        height: 100,
       }} />
     </View>
   );
