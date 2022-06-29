@@ -4,16 +4,19 @@ import { StyleSheet,
   View, 
   Platform, 
   StatusBar, 
-  Dimensions} from 'react-native';
+  } from 'react-native';
+import { useDimensions, useDeviceOrientation } from '@react-native-community/hooks';
 
 export default function App() {
-  console.log(Dimensions.get('screen'));
+  console.log(useDimensions())
+  console.log(useDeviceOrientation())
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={{
         backgroundColor: 'dodgerblue',
-        width: '50%',
-        height: '50%',
+        width: '100%',
+        height: '30%',
       }}></View>
     </SafeAreaView>
   );
