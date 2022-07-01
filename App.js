@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { View, Text } from "react-native";
 
 
 export default function App() {
@@ -11,32 +11,19 @@ export default function App() {
         alignItems: "center",
       }}
     >
-      <View
-        style={{
-          backgroundColor: "dodgerblue",
-          width: 100,
-          height: 100,
-          padding: 20,
-          paddingHorizontal: 10,
-          paddingLeft: 30,
-        }}
-      >
-        <View
-          style={{
-            backgroundColor: "gold",
-            height: 50,
-            width: 50,
-          }}
-        ></View>
-      </View>
-      <View
-        style={{
-          backgroundColor: "tomato",
-          width: 100,
-          height: 100,
-          margin: 100,
-        }}
-      ></View>
+     <Text
+      style={{
+        // fontFamily: "Courier",
+        fontSize: 30,
+        fontStyle: "italic",
+        fontWeight: "600",
+        color: "tomato",
+        textTransform: "capitalize",
+        textDecorationLine: "underline",
+        textAlign: "center",
+        lineHeight: 30,
+      }}
+     >I love react native! This is my first React APP</Text>
 
     </View>
   );
