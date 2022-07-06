@@ -1,6 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { FlatList, SafeAreaView, StyleSheet, Platform } from 'react-native';
+import { 
+    FlatList, 
+    SafeAreaView, 
+    StyleSheet, 
+} from 'react-native';
+
+import Constants from 'expo-constants';
+//console.log(Constants)
+
 
 import ListItem from '../components/ListItem';
 
@@ -39,7 +46,7 @@ function MessagesScreen(props) {
 
 const styles = StyleSheet.create({
     screen: {
-        paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0
+        paddingTop: Constants.statusBarHeight
     },
 })
 
