@@ -1,3 +1,4 @@
+import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { FlatList, SafeAreaView, StyleSheet, Platform } from 'react-native';
 
@@ -20,7 +21,7 @@ const messages = [
 
 function MessagesScreen(props) {
     return (
-        <SafeAreaView>
+        <SafeAreaView style={styles.screen}>
             <FlatList 
                 data={messages} 
                 keyExtractor={message => message.id.toString()}
@@ -35,5 +36,11 @@ function MessagesScreen(props) {
         </SafeAreaView>
     );
 }
+
+const styles = StyleSheet.create({
+    screen: {
+        paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0
+    },
+})
 
 export default MessagesScreen;
